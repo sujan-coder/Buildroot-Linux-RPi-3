@@ -16,3 +16,4 @@ make raspberrypi3_defconfig
 # Replace .config with this repo's config if desired
 cp ../my-buildroot-rpi3/.config .
 make
+
