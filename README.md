@@ -8,7 +8,7 @@ The goal is to understand Linux system components like BusyBox, rootfs, and boot
 - Custom kernel built with Buildroot
 - Built and tested on Raspberry Pi 3
 
-  ## 🛠 Build Steps
+## 🛠 Build Steps
 ```bash
 git clone https://github.com/buildroot/buildroot.git
 cd buildroot
