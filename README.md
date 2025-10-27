@@ -18,7 +18,7 @@ The system includes:
 | **Default Config Used** | `raspberrypi3_defconfig` |
 | **Access Method** | SSH / Serial Console |
 
-## Boot Flow
+*** Boot Flow ***
 ### Power On
    ⬇
 ### Bootloader
