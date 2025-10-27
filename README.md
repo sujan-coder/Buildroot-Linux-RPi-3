@@ -5,7 +5,7 @@ The goal is to understand Linux system components like BusyBox, rootfs, and boot
 The system includes:
 - A minimal Linux kernel  
 - BusyBox utilities  
-- SSH (Dropbear) for remote access  
+- SSH for remote access  
 - Basic networking setup
 
 ##  Project Details
@@ -15,7 +15,7 @@ The system includes:
 | **Target Board** | Raspberry Pi 3 |
 | **Build System** | Buildroot |
 | **Filesystem Type** | ext4 |
-| **Default Config Used** | `raspberrypi3_defconfig` |
+| **Default Config Used** | raspberrypi3_defconfig |
 | **Access Method** | SSH / Serial Console |
 
 ## Boot Flow 
@@ -30,7 +30,8 @@ sudo apt install which sed make binutils build-essential \ diffutils gcc g++ bas
 ```
 ### Download Buildroot
 ```sh
-git clone https://gitlab.c make raspberrypi3_defconfiom/buildroot.org/buildroot.git
+git clone https://github.com/buildroot/buildroot.git
+cd buildroot
 ```
 ### Select the Board
 ```sh
@@ -45,6 +46,13 @@ git clone https://gitlab.c make raspberrypi3_defconfiom/buildroot.org/buildroot.
 ### Build the system
 ```sh
   make
-```  
-
+```
+### Flash the image to SD Card using
+```sh
+  sudo dd if=output/images/sdcard.img of=/dev/sdX bc=4M
+``` 
+### Booted on Raspberry Pi 3 and accessed via SSH
+```sh
+  ssh root@10.247.xx.xx
+``` 
 
