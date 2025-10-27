@@ -16,7 +16,7 @@ The system includes:
 | **Build System** | Buildroot |
 | **Filesystem Type** | ext4 |
 | **Default Config Used** | raspberrypi3_defconfig |
-| **Access Method** | SSH / Serial Console |
+| **Access Method** | SSH |
 
 ## Boot Flow 
  **Power On** ⇨ **Bootloader** (loads kernel +dtb)  ⇨ **Kernel** (initiates hardware) ⇨ **Mounts** (rootfs) ⇨ **Runs** (BusyBox) ⇨ **You get a shell** 
