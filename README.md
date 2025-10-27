@@ -59,7 +59,7 @@ cd buildroot
 ```sh
 root@10.247.xx.xx's password:
 
-# uname -a
+`# uname -a`
 Linux buildroot 6.12.41-v7 #1 SMP Fri Oct 10 20:03:22 IST 2025 armv7l GNU/Linux
 
 # hostname
