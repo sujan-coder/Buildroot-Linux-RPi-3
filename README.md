@@ -19,9 +19,7 @@ The system includes:
 | **Access Method** | SSH / Serial Console |
 
 ## Boot Flow 
-``` mermaid
 ### Power On
-```
    ⬇
 ### Bootloader
    ⬇
@@ -59,4 +57,18 @@ git clone https://gitlab.c make raspberrypi3_64_defconfiom/buildroot.org/buildro
   make
 ```  
 
-
+<p align="center">
+## Boot Flow
+<br>
+### Power On
+   ⬇
+### Bootloader
+   ⬇
+### Kernel
+   ⬇
+### Mounts
+   ⬇
+### Runs
+   ⬇
+### You
+</p>
