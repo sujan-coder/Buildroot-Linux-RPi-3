@@ -19,7 +19,7 @@ The system includes:
 | **Access Method** | SSH / Serial Console |
 
 ## Boot Flow 
- **Power On**⇨ **Bootloader** (loads kernel +dtb)  ⇨ **Kernel** (initiates hardware) ⇨ **Mounts** (rootfs) ⇨ **Runs** (BusyBox) ⇨ You get a shell 
+ **Power On** ⇨ **Bootloader** (loads kernel +dtb)  ⇨ **Kernel** (initiates hardware) ⇨ **Mounts** (rootfs) ⇨ **Runs** (BusyBox) ⇨ **You get a shell** 
 
 ## Installation Steps
 
