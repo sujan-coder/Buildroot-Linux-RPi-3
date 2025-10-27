@@ -62,6 +62,9 @@ root@10.247.xx.xx's password:
 # uname -a
 Linux buildroot 6.12.41-v7 #1 SMP Fri Oct 10 20:03:22 IST 2025 armv7l GNU/Linux
 
+# hostname
+buildroot
+
 # busybox
 BusyBox v1.37.0 (2025-10-10 19:54:00 IST) multi-call binary.
 BusyBox is copyrighted by many authors between 1998-2015.
@@ -162,7 +165,34 @@ Hardware	: BCM2835
 Revision	: a22082
 Serial		: 000000007c78add3
 Model		: Raspberry Pi 3 Model B Rev 1.2
-# 
+
+# ls /
+bin           dev           lib           linuxrc       media         opt           root          sbin          tmp           var
+crond.reboot  etc           lib32         lost+found    mnt           proc          run           sys           usr
+
+# mount
+/dev/root on / type ext4 (rw,relatime)
+devtmpfs on /dev type devtmpfs (rw,relatime,size=426292k,nr_inodes=106573,mode=755)
+proc on /proc type proc (rw,relatime)
+devpts on /dev/pts type devpts (rw,relatime,gid=5,mode=620,ptmxmode=666)
+tmpfs on /dev/shm type tmpfs (rw,relatime)
+tmpfs on /tmp type tmpfs (rw,relatime)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,relatime,mode=755)
+sysfs on /sys type sysfs (rw,relatime)
+
+# df -h
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root               107.0M     78.3M     20.3M  79% /
+devtmpfs                416.3M         0    416.3M   0% /dev
+tmpfs                   448.8M         0    448.8M   0% /dev/shm
+tmpfs                   448.8M    292.0K    448.5M   0% /tmp
+tmpfs                   448.8M     40.0K    448.8M   0% /run
+# ls /etc
+cron           fstab          hosts          issue          nsswitch.conf  profile        resolv.conf    shells
+dhcpcd.conf    group          init.d         mtab           os-release     profile.d      services       ssh
+dropbear       hostname       inittab        network        passwd         protocols      shadow         ssl
+```
+
 
 
 
