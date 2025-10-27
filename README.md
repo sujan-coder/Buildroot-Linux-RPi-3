@@ -8,7 +8,7 @@ The system includes:
 - SSH (Dropbear) for remote access  
 - Basic networking setup
 
-## 🧩 Project Details
+##  Project Details
 
 | Item | Description |
 |------|--------------|
