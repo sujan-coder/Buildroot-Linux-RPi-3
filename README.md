@@ -54,5 +54,115 @@ cd buildroot
 ### Booted on Raspberry Pi 3 and accessed via SSH
 ```sh
   ssh root@10.247.xx.xx
-``` 
+```
+##Output Terminal 
+```sh
+root@10.247.xx.xx's password:
+
+# uname -a
+Linux buildroot 6.12.41-v7 #1 SMP Fri Oct 10 20:03:22 IST 2025 armv7l GNU/Linux
+
+# busybox
+BusyBox v1.37.0 (2025-10-10 19:54:00 IST) multi-call binary.
+BusyBox is copyrighted by many authors between 1998-2015.
+Licensed under GPLv2. See source distribution for detailed
+copyright notices.
+
+Usage: busybox [function [arguments]...]
+   or: busybox --list[-full]
+   or: busybox --show SCRIPT
+   or: busybox --install [-s] [DIR]
+   or: function [arguments]...
+
+	BusyBox is a multi-call binary that combines many common Unix
+	utilities into a single executable.  Most people will create a
+	link to busybox for each function they wish to use and BusyBox
+	will act like whatever it was invoked as.
+
+Currently defined functions:
+	[, [[, addgroup, adduser, ar, arch, arp, arping, ascii, ash, awk, base32, base64, basename, bc, blkid, bunzip2, bzcat, cat, chattr,
+	chgrp, chmod, chown, chroot, chrt, chvt, cksum, clear, cmp, cp, cpio, crc32, crond, crontab, cut, date, dc, dd, deallocvt, delgroup,
+	deluser, devmem, df, diff, dirname, dmesg, dnsd, dnsdomainname, dos2unix, du, dumpkmap, echo, egrep, eject, env, ether-wake, expr,
+	factor, fallocate, false, fbset, fdflush, fdformat, fdisk, fgrep, find, flock, fold, free, freeramdisk, fsck, fsfreeze, fstrim, fuser,
+	getfattr, getopt, getty, grep, gunzip, gzip, halt, hdparm, head, hexdump, hexedit, hostid, hostname, hwclock, i2cdetect, i2cdump,
+	i2cget, i2cset, i2ctransfer, id, ifconfig, ifdown, ifup, inetd, init, insmod, install, ip, ipaddr, ipcrm, ipcs, iplink, ipneigh,
+	iproute, iprule, iptunnel, kill, killall, killall5, klogd, last, less, link, linux32, linux64, linuxrc, ln, loadfont, loadkmap, logger,
+	login, logname, losetup, ls, lsattr, lsmod, lsof, lspci, lsscsi, lsusb, lzcat, lzma, lzopcat, makedevs, md5sum, mdev, mesg, microcom,
+	mim, mkdir, mkdosfs, mke2fs, mkfifo, mknod, mkpasswd, mkswap, mktemp, modprobe, more, mount, mountpoint, mt, mv, nameif, netstat, nice,
+	nl, nohup, nologin, nproc, nslookup, nuke, od, openvt, partprobe, passwd, paste, patch, pidof, ping, pipe_progress, pivot_root,
+	poweroff, printenv, printf, ps, pwd, rdate, readlink, readprofile, realpath, reboot, renice, reset, resize, resume, rm, rmdir, rmmod,
+	route, run-init, run-parts, runlevel, sed, seedrng, seq, setarch, setconsole, setfattr, setkeycodes, setlogcons, setpriv, setserial,
+	setsid, sh, sha1sum, sha256sum, sha3sum, sha512sum, shred, sleep, sort, start-stop-daemon, strings, stty, su, sulogin, svc, svok,
+	swapoff, swapon, switch_root, sync, sysctl, syslogd, tail, tar, tee, telnet, test, tftp, time, top, touch, tr, traceroute, tree, true,
+	truncate, ts, tsort, tty, ubirename, udhcpc, uevent, umount, uname, uniq, unix2dos, unlink, unlzma, unlzop, unxz, unzip, uptime,
+	usleep, uudecode, uuencode, vconfig, vi, vlock, w, watch, watchdog, wc, wget, which, who, whoami, xargs, xxd, xz, xzcat, yes, zcat
+
+# ls /proc
+1              158            17715          230            45             72             bus            irq            schedstat
+108            15841          17731          232            47             74             cgroups        kallsyms       self
+112            159            17734          24             48             75             cmdline        key-users      slabinfo
+116            15974          17741          26             49             76             consoles       keys           softirqs
+11636          16             17742          27             5              77             cpu            kmsg           stat
+11655          161            17753          28             50             78             cpuinfo        kpagecgroup    swaps
+12             16172          17754          29             51             79             crypto         kpagecount     sys
+13             162            18             3              52             8              device-tree    kpageflags     sysrq-trigger
+132            163            183            31             55             80             devices        latency_stats  sysvipc
+14             164            19             32             56             81             diskstats      loadavg        thread-self
+14049          17             2              33             57             82             driver         locks          timer_list
+14889          171            20             34             6              83             execdomains    meminfo        tty
+14954          17345          206            36             60             85             fb             misc           uptime
+15             17388          21             4              61             86             filesystems    modules        version
+152            17471          212            41             68             87             fs             mounts         vmallocinfo
+15376          17596          22             42             69             88             interrupts     net            vmstat
+157            17712          222            43             7              89             iomem          pagetypeinfo   zoneinfo
+15723          17714          23             44             71             buddyinfo      ioports        partitions
+
+# cat /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: BCM2835
+Revision	: a22082
+Serial		: 000000007c78add3
+Model		: Raspberry Pi 3 Model B Rev 1.2
+# 
+
+
 
