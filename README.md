@@ -20,15 +20,15 @@ The system includes:
 
 ## Boot Flow
 ### Power On
-  ⬇
+      ⬇
 ### Bootloader
-  ⬇
+      ⬇
 ### Kernel
-  ⬇
+      ⬇
 ### Mounts
-  ⬇
+      ⬇
 ### Runs
-  ⬇
+      ⬇
 ### You
 
 ## Installation Steps
