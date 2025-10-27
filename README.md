@@ -31,7 +31,7 @@ git clone https://gitlab.c make raspberrypi3_64_defconfiom/buildroot.org/buildro
 ```
 ### Select the Board
 ```sh
-  make raspberrypi3_64_defconfig
+  make raspberrypi3_defconfig
 ```
 ### Customize the Build
 ```sh
