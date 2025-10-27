@@ -32,3 +32,4 @@ curl -1sLf 'https://dl.cloudsmith.io/public/balena/etcher/setup.deb.sh' | sudo -
 sudo apt update
 sudo apt install balena-etcher-electron
 ```
+<img width="1270" height="617" alt="image" src="https://github.com/user-attachments/assets/76a15830-1789-4932-aa4c-99885fd6d150" />
