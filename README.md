@@ -19,17 +19,17 @@ The system includes:
 | **Access Method** | SSH / Serial Console |
 
 ## Boot Flow
-Power On
+### Power On
   ⬇
-Bootloader
+### Bootloader
   ⬇
-Kernel
+### Kernel
   ⬇
-Mounts
+### Mounts
   ⬇
-Runs
+### Runs
   ⬇
- You
+### You
 
 ## Installation Steps
 
