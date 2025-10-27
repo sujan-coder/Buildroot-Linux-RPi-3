@@ -20,7 +20,7 @@ The system includes:
 
 ## Boot Flow
 ### Power On
-      ⬇
+   ⬇
 ### Bootloader
       ⬇
 ### Kernel
