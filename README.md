@@ -30,7 +30,7 @@ sudo apt install which sed make binutils build-essential \ diffutils gcc g++ bas
 ```
 ### Download Buildroot
 ```sh
-git clone https://gitlab.c make raspberrypi3_64_defconfiom/buildroot.org/buildroot.git
+git clone https://gitlab.c make raspberrypi3_defconfiom/buildroot.org/buildroot.git
 ```
 ### Select the Board
 ```sh
