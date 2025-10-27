@@ -187,6 +187,7 @@ devtmpfs                416.3M         0    416.3M   0% /dev
 tmpfs                   448.8M         0    448.8M   0% /dev/shm
 tmpfs                   448.8M    292.0K    448.5M   0% /tmp
 tmpfs                   448.8M     40.0K    448.8M   0% /run
+
 # ls /etc
 cron           fstab          hosts          issue          nsswitch.conf  profile        resolv.conf    shells
 dhcpcd.conf    group          init.d         mtab           os-release     profile.d      services       ssh
