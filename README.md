@@ -22,13 +22,13 @@ The system includes:
 ### Power On
    ⬇
 ### Bootloader
-      ⬇
+   ⬇
 ### Kernel
-      ⬇
+   ⬇
 ### Mounts
-      ⬇
+   ⬇
 ### Runs
-      ⬇
+   ⬇
 ### You
 
 ## Installation Steps
