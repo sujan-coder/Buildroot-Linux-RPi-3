@@ -18,22 +18,23 @@ The system includes:
 | **Default Config Used** | `raspberrypi3_defconfig` |
 | **Access Method** | SSH / Serial Console |
 
-## Installation Stepssudo apt update
-Install Prerequisites
-'''
-- sudo apt update
-- sudo apt install which sed make binutils build-essential \ diffutils gcc g++ bash patch gzip bzip2 perl tar cpio \ unzip rsync file bc findutils wget python3 libncurses5-dev \ libncursesw5-dev git
-Download Buildroot
-'''
-- git clone https://gitlab.c make raspberrypi3_64_defconfiom/buildroot.org/buildroot.git
-Select the Board
-'''
--  make raspberrypi3_64_defconfig
-Customize the Build
-'''
--  make menuconfig
--  make linux-menuconfig
--  make busybox-menuconfig
-Build the system
-'''
-- make  
+## Installation Steps
+
+#Install Prerequisites
+'''sh
+sudo apt update
+sudo apt install which sed make binutils build-essential \ diffutils gcc g++ bash patch gzip bzip2 perl tar cpio \ unzip rsync file bc findutils wget python3 libncurses5-dev \ libncursesw5-dev git
+#Download Buildroot
+'''sh
+git clone https://gitlab.c make raspberrypi3_64_defconfiom/buildroot.org/buildroot.git
+#Select the Board
+'''sh
+  make raspberrypi3_64_defconfig
+#Customize the Build
+'''sh
+  make menuconfig
+  make linux-menuconfig
+  make busybox-menuconfig
+#Build the system
+'''sh
+  make  
